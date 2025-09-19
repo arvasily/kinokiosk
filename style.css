@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1194px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin: 0 auto;
+}
+
+.header {
+    /*    border: 2px solid black;*/
+    margin-top: 34px;
+    margin-bottom: 15px;
+}
+
+.header-box {
+    /*    border: 3px solid rgb(167, 241, 30);*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    /*    border: 3px solid rgb(33, 30, 218);*/
+}
+
+.header-logo h1 {
+    margin: 0;
+    font-family: Inter, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+}
+
+.header-logo p {
+    margin: 0;
+    font-family: Inter, sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 15px;
+}
+
+.header-controls {
+    /*    border: 3px solid rgb(221, 17, 17);*/
+}
+
+.header-controls a {
+    color: black;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    text-decoration: none;
+}
+
+.header-controls a:hover {
+    color: rgb(225, 73, 73);
+}
+
+.header-controls--mobile {
+    display: none;
+    align-self: flex-start;
+}
+
+.search-box {
+    border-radius: 5px;
+    background: rgb(255, 73, 73);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+    gap: 3px;
+    height: 50px;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    background: rgb(255, 255, 255);
+    flex-grow: 1;
+    height: 100%;
+    padding: 0 30px;
+    min-width: 0;
+}
+
+.search-box button {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: none;
+    border: none;
+    color: whitesmoke;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 400px;
+    line-height: 17px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .header-controls {
+        display: none;
+    }
+
+    .header-controls--mobile {
+        /*        border: 3px solid rgb(221, 17, 17);*/
+        display: block;
+    }
+
+    .search-box input {
+        padding: 0 10px;
+    }
+}
